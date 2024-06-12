@@ -1,2 +1,0 @@
-1. Get the propmt value //done
-2. First get the form value 
