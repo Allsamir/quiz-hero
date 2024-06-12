@@ -4,7 +4,7 @@ function createABlog() {
   document.getElementById("form").addEventListener("submit", (e) => {
     e.preventDefault();
     const adminName = prompt("Admin Name");
-    if (adminName !== "Allsamir") return;
+    if (adminName !== "admin_name") return; // please modify "admin_name" with admin name
     let question = e.target.question.value;
     let answer = e.target.answer.value;
     const question_container = document.getElementById("question-container");
@@ -33,7 +33,7 @@ function createABlog() {
 
 function renderArticles(articleFromStorage) {
   const question_container = document.getElementById("question-container");
-  articleFromStorage.forEach((article, index) => {
+  articleFromStorage.forEach((article) => {
     const newArticle = document.createElement("article");
     newArticle.classList.add("space-y-3", "border-b-2", "pb-5");
     newArticle.innerHTML = `
